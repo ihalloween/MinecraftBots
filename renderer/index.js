@@ -79,15 +79,14 @@ function clearinfo() {
 }
 //open links
 function opendiscord() {
-  shell.openExternal('https://discord.gg/m6b8Pw4NR8')
+  shell.openExternal('https://www.birajrai.tk/support')
 }
 
 function openyt() {
-  shell.openExternal('https://www.youtube.com/RattlesHyper/')
+  shell.openExternal('https://www.birajrai.tk/youtube3')
 }
-
-function opengithub() {
-  shell.openExternal('https://github.com/RattlesHyper/TrafficerMC')
+function openwebsite() {
+  shell.openExternal('https://birajrai.tk/downloads#mcbots')
 }
 //restore user data
 function setData() {
