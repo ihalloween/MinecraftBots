@@ -1,0 +1,41 @@
+{
+  "name": "minecraftbots",
+  "author": "birajrai <birajrai.official@gmail.com>",
+  "maintainer": "Biraj Rai",
+  "version": "1.0.0",
+  "description": "A Minecraft botting tool with Anti-AFK, Chat spammer, Inventory/Chest manager features.",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "winx64": "electron-builder build --win --x64",
+    "winx86": "electron-builder build --win --ia32",
+    "linux64": "electron-builder build --linux --x64",
+    "linux86": "electron-builder build --linux --ia32"
+  },
+  "dependencies": {
+    "electron-store": "^8.0.1",
+    "mineflayer": "^4.1.0",
+    "node-fetch": "2.6.7"
+  },
+  "devDependencies": {
+    "electron": "^18.2.2",
+    "electron-builder": "^23.0.3"
+  },
+  "build": {
+    "appId": "com.neppixel.minecraftbots",
+    "productName": "MinecraftBots",
+    "copyright": "Copyright © 2022 Neppixel",
+    "win": {
+      "target": "portable",
+      "publisherName": "Neppixel",
+      "icon": "assets/icons/win/icon.png"
+    },
+    "linux": {
+      "target": [
+        "AppImage"
+      ],
+      "icon": "assets/icons/win/icon.png",
+      "category": "Utility"
+    }
+  }
+}
