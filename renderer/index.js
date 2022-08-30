@@ -49,10 +49,10 @@ ipcRenderer.on('verinfo', () => {
   setTimeout(() => {
     clearinfo()
   }, 15 * 1000);
-  fetch("https://raw.githubusercontent.com/RattlesHyper/TrafficerMC/main/VERSION", {method: 'GET'})
+  fetch("https://raw.githubusercontent.com/birajrai/birajrai/main/minecraftbots/VERSION", {method: 'GET'})
     .then(response => response.text())
     .then(result => {
-        document.getElementById('updateinfo').innerHTML = `Active Version: v${result}`
+        document.getElementById('updateinfo').innerHTML = `Latest Version: v${result}`
     })
 });
 // main to renderer path
